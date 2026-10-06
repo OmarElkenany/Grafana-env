@@ -16,7 +16,7 @@ The job stays alive for 5 minutes at the end so Prometheus can scrape it.
 Run `docker compose up spark` again to re-run it.
 
 Without Docker: run `spark-submit spark_job.py` and change the targets in
-`prometheus/prometheus.yml` from `spark:4040` to `localhost:4040`.
+`prometheus.yml` from `spark:4040` to `localhost:4040`.
 
 ## 2. Verify Prometheus receives Spark metrics
 * While the job is running, open http://localhost:4040/metrics/prometheus/ and
